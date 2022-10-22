@@ -8,8 +8,8 @@ int main(void)
 {
 	int i;
 	char c;
-	long l;
-	double d;
+	long int l;
+	long long int d;
 	float f;
 
 	printf("%lu\n", sizeof(i));
