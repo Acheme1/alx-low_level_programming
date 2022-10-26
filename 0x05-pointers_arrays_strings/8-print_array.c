@@ -2,10 +2,10 @@
 #include <stdio.h>
 
 /**
- * print_array - print n element of an array of integer
+ * print_array - print n element of an array
  *
  *@a: array
- * @n: numbers of variable to be print
+ * @n: numbers of values to be printed
  */
 
 void print_array(int *a, int n)
@@ -17,7 +17,7 @@ void print_array(int *a, int n)
 	{
 		printf("%d", a[t]);
 		if (t != n - 1)
-		printf(",");
+		printf(", ");
 	}
 	printf("\n");
 }
