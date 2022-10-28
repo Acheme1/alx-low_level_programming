@@ -10,15 +10,21 @@
 
 char *_strcat(char *dest, char *src)
 {
-	char s1[98] = "source";
-	char s2[] = "destination\n";
-	char *ptr;
+	int x;
+	int y;
 
-	printf("%s\n", s1);
-	printf("%s", s2);
-	ptr = _strcat(s1, s2);
-	printf("%s", s1);
-	printf("%s", s2);
-	printf("%s", ptr);
-	return (0);
+	x = 0;
+	while (dest[x] != '\0')
+	{
+		x++;
+	}
+	y = 0;
+	while (src[y] != '\0')
+	{
+		dest[x] = src[y];
+		x++;
+		y++;
+	}
+	dest[x] = '\0';
+	return (dest);
 }
