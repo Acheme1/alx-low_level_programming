@@ -1,11 +1,10 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
 * *_strcat - check the code and concatenates two strings
-* @src: input
-* @dest: input
-*Return: always "0" success
+* @src: copy to
+* @dest: copy from
+*Return: pointer to dest
 */
 
 char *_strcat(char *dest, char *src)
